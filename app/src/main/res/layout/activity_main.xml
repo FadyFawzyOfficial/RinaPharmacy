@@ -8,43 +8,89 @@
 	android:orientation = "vertical"
 	tools:context = ".MainActivity">
 
+	<!-- Header ViewGroup -->
 	<RelativeLayout
 		android:layout_width = "match_parent"
 		android:layout_height = "0dp"
-		android:layout_weight = "1">
+		android:layout_weight = "7">
 
 		<ImageView
 			android:layout_width = "match_parent"
-			android:layout_height = "match_parent" />
+			android:layout_height = "match_parent"
+			android:scaleType = "centerCrop"
+			android:src = "@drawable/header2" />
 
 		<TextView
 			android:layout_width = "wrap_content"
 			android:layout_height = "wrap_content"
 			android:layout_alignParentBottom = "true"
-			android:layout_margin = "16dp" />
+			android:fontFamily = "cursive"
+			android:padding = "8dp"
+			android:text = "Rina Pharm"
+			android:textColor = "@color/colorAccent"
+			android:textSize = "36sp"
+			android:textStyle = "bold" />
 
 	</RelativeLayout>
 
+
+	<!-- Social Media ViewGroup -->
 	<LinearLayout
 		android:layout_width = "match_parent"
 		android:layout_height = "0dp"
-		android:layout_weight = "1">
+		android:layout_weight = "2">
 
+		<!-- Facebook -->
 		<LinearLayout
 			android:layout_width = "0dp"
 			android:layout_height = "match_parent"
 			android:layout_weight = "1"
+			android:background = "#3B5998"
 			android:orientation = "vertical">
 
 			<ImageView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight = "2" />
+				android:layout_weight = "2"
+				android:padding = "5dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/facebook" />
 
 			<TextView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight = "1" />
+				android:layout_weight = "1"
+				android:gravity = "center"
+				android:text = "facebook/RinaPharm"
+				android:textColor = "@android:color/black"
+				android:textStyle = "italic" />
+
+		</LinearLayout>
+
+		<!-- Twitter -->
+		<LinearLayout
+			android:layout_width = "0dp"
+			android:layout_height = "match_parent"
+			android:layout_weight = "1"
+			android:background = "#00ACEE"
+			android:orientation = "vertical">
+
+			<ImageView
+				android:layout_width = "match_parent"
+				android:layout_height = "0dp"
+				android:layout_weight = "2"
+				android:padding = "5dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/twitter" />
+
+			<TextView
+				android:layout_width = "match_parent"
+				android:layout_height = "0dp"
+				android:layout_weight = "1"
+				android:gravity = "center"
+				android:text = "twitter/RinaPharm"
+				android:textColor = "@android:color/black"
+				android:textStyle = "italic" />
 
 		</LinearLayout>
 
@@ -52,153 +98,186 @@
 			android:layout_width = "0dp"
 			android:layout_height = "match_parent"
 			android:layout_weight = "1"
+			android:background = "#D34836"
 			android:orientation = "vertical">
 
 			<ImageView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight = "2" />
+				android:layout_weight = "2"
+				android:padding = "5dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/google_plus" />
 
 			<TextView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight = "1" />
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_width = "0dp"
-			android:layout_height = "match_parent"
-			android:layout_weight = "1"
-			android:orientation = "vertical">
-
-			<ImageView
-				android:layout_width = "match_parent"
-				android:layout_height = "0dp"
-				android:layout_weight = "2" />
-
-			<TextView
-				android:layout_width = "match_parent"
-				android:layout_height = "0dp"
-				android:layout_weight = "1" />
+				android:layout_weight = "1"
+				android:gravity = "center"
+				android:text = "plus.google/+RinaPharm"
+				android:textColor = "@android:color/black"
+				android:textSize = "12.5sp"
+				android:textStyle = "italic" />
 
 		</LinearLayout>
 
 	</LinearLayout>
 
+	<!-- Contact Information -->
 	<LinearLayout
 		android:layout_width = "match_parent"
 		android:layout_height = "0dp"
-		android:layout_weight = "1"
+		android:layout_weight = "5"
+		android:background = "@drawable/middle"
 		android:orientation = "vertical">
 
+		<!-- Mobile Small ViewGroup -->
 		<LinearLayout
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
 
 			<ImageView
-				android:layout_width = "wrap_content"
-				android:layout_height = "wrap_content" />
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight = "1"
+				android:padding = "2dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/mobile" />
 
 			<LinearLayout
-				android:layout_width = "match_parent"
+				android:layout_width = "0dp"
 				android:layout_height = "match_parent"
+				android:layout_weight = "4"
 				android:orientation = "vertical">
 
 				<TextView
-					android:layout_width = "match_parent"
+					android:layout_width = "wrap_content"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:gravity = "bottom"
+					android:text = "(+20) 128 456 1176"
+					android:textColor = "@android:color/black" />
 
 				<TextView
-					android:layout_width = "match_parent"
+					android:layout_width = "wrap_content"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:text = "Mobile" />
 
 			</LinearLayout>
 
 		</LinearLayout>
 
+		<!-- Email Small ViewGroup -->
 		<LinearLayout
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
 
 			<ImageView
-				android:layout_width = "wrap_content"
-				android:layout_height = "wrap_content" />
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight = "1"
+				android:padding = "2dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/email" />
 
 			<LinearLayout
-				android:layout_width = "match_parent"
+				android:layout_width = "0dp"
 				android:layout_height = "match_parent"
+				android:layout_weight = "4"
 				android:orientation = "vertical">
 
 				<TextView
-					android:layout_width = "match_parent"
+					android:layout_width = "wrap_content"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:gravity = "bottom"
+					android:text = "Client@RinaPharm.com"
+					android:textColor = "@android:color/black" />
 
 				<TextView
-					android:layout_width = "match_parent"
+					android:layout_width = "wrap_content"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:text = "Email" />
 
 			</LinearLayout>
 
 		</LinearLayout>
 
+		<!-- Website Small ViewGroup -->
 		<LinearLayout
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
 
 			<ImageView
-				android:layout_width = "wrap_content"
-				android:layout_height = "wrap_content" />
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight = "1"
+				android:padding = "2dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/website" />
 
 			<LinearLayout
-				android:layout_width = "match_parent"
+				android:layout_width = "0dp"
 				android:layout_height = "match_parent"
+				android:layout_weight = "4"
 				android:orientation = "vertical">
 
 				<TextView
-					android:layout_width = "match_parent"
+					android:layout_width = "wrap_content"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:gravity = "bottom"
+					android:text = "www.RinPharm.com"
+					android:textColor = "@android:color/black" />
 
 				<TextView
-					android:layout_width = "match_parent"
+					android:layout_width = "wrap_content"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:text = "Websire" />
 
 			</LinearLayout>
 
 		</LinearLayout>
 
+		<!-- Address Small ViewGroup -->
 		<LinearLayout
 			android:layout_width = "match_parent"
 			android:layout_height = "0dp"
 			android:layout_weight = "1">
 
 			<ImageView
-				android:layout_width = "wrap_content"
-				android:layout_height = "wrap_content" />
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight = "1"
+				android:padding = "2dp"
+				android:scaleType = "centerInside"
+				android:src = "@drawable/address" />
 
 			<LinearLayout
-				android:layout_width = "match_parent"
+				android:layout_width = "0dp"
 				android:layout_height = "match_parent"
+				android:layout_weight = "4"
 				android:orientation = "vertical">
 
 				<TextView
 					android:layout_width = "match_parent"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:gravity = "bottom"
+					android:text = "Cairo, Egypt"
+					android:textColor = "@android:color/black" />
 
 				<TextView
 					android:layout_width = "match_parent"
 					android:layout_height = "0dp"
-					android:layout_weight = "1" />
+					android:layout_weight = "1"
+					android:text = "Address" />
 
 			</LinearLayout>
 
@@ -206,80 +285,98 @@
 
 	</LinearLayout>
 
+	<!-- Footer ViewGroup -->
 	<LinearLayout
 		android:layout_width = "match_parent"
 		android:layout_height = "0dp"
-		android:layout_weight="1">
+		android:layout_weight = "2.5"
+		android:background = "#C1E1CA">
 
+		<!-- Operation hours -->
 		<LinearLayout
 			android:layout_width = "0dp"
 			android:layout_height = "match_parent"
-			android:orientation="vertical"
-			android:layout_weight="1">
+			android:layout_weight = "1"
+			android:orientation = "vertical">
 
 			<ImageView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="2"/>
+				android:layout_weight = "3"
+				android:src = "@drawable/operation_hours" />
 
 			<TextView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="1"/>
+				android:layout_weight = "2"
+				android:gravity = "center"
+				android:text = "Hours of Operation" />
 
 		</LinearLayout>
 
+		<!-- Discount -->
 		<LinearLayout
 			android:layout_width = "0dp"
 			android:layout_height = "match_parent"
-			android:orientation="vertical"
-			android:layout_weight="1">
+			android:layout_weight = "1"
+			android:orientation = "vertical">
 
 			<ImageView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="2"/>
+				android:layout_weight = "3"
+				android:src = "@drawable/discount" />
 
 			<TextView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="1"/>
+				android:layout_weight = "2"
+				android:gravity = "center"
+				android:text = "10% Discount" />
 
 		</LinearLayout>
 
+		<!-- Free shipping -->
 		<LinearLayout
 			android:layout_width = "0dp"
 			android:layout_height = "match_parent"
-			android:orientation="vertical"
-			android:layout_weight="1">
+			android:layout_weight = "1"
+			android:orientation = "vertical">
 
 			<ImageView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="2"/>
+				android:layout_weight = "3"
+				android:src = "@drawable/free_shipping" />
 
 			<TextView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="1"/>
+				android:layout_weight = "2"
+				android:gravity = "center"
+				android:text = "Free Shipping" />
 
 		</LinearLayout>
 
+		<!-- Easy payment -->
 		<LinearLayout
 			android:layout_width = "0dp"
 			android:layout_height = "match_parent"
-			android:orientation="vertical"
-			android:layout_weight="1">
+			android:layout_weight = "1"
+			android:orientation = "vertical">
 
 			<ImageView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="2"/>
+				android:layout_weight = "3"
+				android:src = "@drawable/easy_payment" />
 
 			<TextView
 				android:layout_width = "match_parent"
 				android:layout_height = "0dp"
-				android:layout_weight="1"/>
+				android:layout_weight = "2"
+				android:gravity = "center"
+				android:text = "Easy Payment" />
 
 		</LinearLayout>
 
